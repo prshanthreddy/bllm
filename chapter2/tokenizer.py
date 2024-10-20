@@ -3,7 +3,6 @@ with open("chapter2/the-verdict.txt", "r", encoding="utf-8") as f:
 print("Total number of character:", len(raw_text))
 print(raw_text[:99])
 
-
 import re
 def tokenize(text):
     return re.findall(r"\b\w+\b", text)
