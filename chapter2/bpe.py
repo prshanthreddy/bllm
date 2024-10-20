@@ -17,3 +17,14 @@ decoded_text=tokenizer.decode(tokens)
 print("After Decoding:",decoded_text)
 
 ## Decodes the unknown token " quickbrownfox" as " quickbrownfox" : Correctly tokenized
+
+
+
+## Calling the tokenizer with the unknown word
+
+unknown_word="jhkdjhjdakah"
+tokens=tokenizer.encode(unknown_word)
+print("Tokenized :",tokens)
+# Tokenied as :[73, 71, 74, 28241, 71, 73, 67, 461, 993]
+decoded_text=tokenizer.decode(tokens)
+print("After Decoding:",decoded_text)
