@@ -35,4 +35,14 @@ class DummyTransformerBlock(nn.Module):
 class DummyLayerNorm(nn.Module):
     def __init__(self,emb_dim,eps=1e-5):
         super().__init__()
-  
+    def forward(self,x):
+        return x
+
+if __name__ == "__main__":
+    x = torch.randint(0,50257,(2,3))
+    model = DummyGPT(cfg)
+    print(model(x))
+    print(model(x).shape)
+    print(model(x).size())
+    print(model(x).size(0))
+    print(model(x).size(1))
