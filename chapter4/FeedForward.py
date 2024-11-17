@@ -20,5 +20,4 @@ if __name__ == "__main__":
     print(feed_forward(x))
     print(feed_forward(x).shape)
     print(feed_forward(x).size())
-    print(feed_forward(x).size(0))
-    print(feed_forward(x).size(1))
+    print(f
